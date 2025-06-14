@@ -2,7 +2,12 @@
 
 ## 本地使用
 
-将 `config.json` 放在根目录下, 将 `messageIds.json` 放在 `data` 文件夹下
+将 `config.json` 放在根目录下, 将 `messageIds.json` 放在 `data` 文件夹下，如果不存在，则创建一个 `data` 文件夹。
+
+ - `config.json` 的格式请参考 `config.example.json`，里面需要填入 bot-token 等内容。不需要的模块将 `enabled` 设置为 `false` 即可。
+ - `messageIds.json` 的格式请参考 `messageIds.example.json`。
+
+注意：由于 `discord.js` 的限制，在 Windows 下必须开启 TUN 的代理模式，才能正常运行。
 
 安装 pnpm:
 

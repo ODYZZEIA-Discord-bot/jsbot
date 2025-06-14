@@ -1,0 +1,60 @@
+{
+  "token": "string (Discord bot token)",
+  "guilds": {
+    "guildId1": {
+      "serverType": "string (Main server | Sub server)",
+      "commandsDeployed": "boolean",
+      "moderationLogThreadId": "string (Discord channel ID)",
+      "threadLogThreadId": "string (Discord channel ID)",
+      "opinionMailThreadId": "string (Discord channel ID)",
+      "AdministratorRoleIds": ["string (Discord role IDs)"],
+      "ModeratorRoleIds": ["string (Discord role IDs)"],
+      "eventsCategoryId": "string (Discord category ID)",
+      "automation": {
+        "mode": "string (analysis | cleanup | disabled)",
+        "threshold": "number (default: 960)",
+        "logThreadId": "string (Discord channel ID)",
+        "whitelistedThreads": ["string (Discord thread IDs)"]
+      },
+      "roleApplication": {
+        "logThreadId": "string | null",
+        "creatorRoleId": "string | null",
+        "volunteerRoleId": "string | null",
+        "senatorRoleId": "string | null",
+        "appealDebateRoleId": "string | null",
+        "QAerRoleId": "string | null",
+        "senatorRoleForumId": "string | null",
+        "WarnedRoleId": "string | null"
+      },
+      "fastgpt": {
+        "enabled": "boolean",
+        "endpoints": [{
+          "url": "string",
+          "key": "string"
+        }],
+        "endpointNames": {
+          "domainKey": "string (display name)"
+        }
+      },
+      "courtSystem": {
+        "enabled": "boolean",
+        "courtChannelId": "string | null",
+        "motionChannelId": "string | null",
+        "debateChannelId": "string | null",
+        "appealDuration": "number (default: 259200000)",
+        "summitDuration": "number (default: 604800000)",
+        "requiredSupports": "number (default: 20)",
+        "debateTagId": "string | null",
+        "motionTagId": "string | null",
+        "voteDuration": "number (default: 86400000)"
+      },
+      "monitor": {
+        "enabled": "boolean",
+        "channelId": "string | null",
+        "messageId": "string | null",
+        "roleMonitorCategoryId": "string | null",
+        "senatorRoleChannelId": "string | null"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "analysisMessages": {
+    "top10": {
+      "guildId1": "messageId1",
+      "guildId2": "messageId2"
+    },
+    "statistics": {
+      "guildId1": "messageId3",
+      "guildId2": "messageId4"
+    }
+  }
+}
